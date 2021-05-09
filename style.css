@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(225deg, #ff0000, #aa0000);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.box {
+    background-color: aliceblue;
+    width: 500px;
+    min-height: 45vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 2px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #ff0000, #aa0000); 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.7);
+    background-color: aliceblue;
+}
+
+.input-box input::placeholder {
+    color: rgba(0,0,0,0.5);
+}
+
+form input[type="submit"]{
+    margin-top: 2rem;
+    padding: 4px;
+    background: linear-gradient(45deg, #ff0000, #da3535);
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(225deg, #ff0000, #da3535);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.9rem;
+}
+
+.footer span {
+    color: rgba(0,0,0,0.7);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer .socialMedia {
+    border-radius: 4px;
+    font-size: 0.9rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0.9rem;
+}
+
+.footer .socialMedia a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .socialMedia a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .socialMedia .twitter {
+    background: linear-gradient(to right, #56a7f2, #468aca);
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.footer .socialMedia .facebook {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+
+
+
